@@ -39,3 +39,4 @@ models:
   taxi_rides_ny:
 vars:
   accepted_payment_types: [1,2,3,4,5]
+  test_run_limit: 100
