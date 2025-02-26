@@ -49,6 +49,6 @@ renamed as (
 )
 
 select * from renamed
-{% if var('is_test_run', default=true) %}
+{% if var('is_test_run', default=false) %}
 limit {{var('test_run_limit')}}
 {% endif %}
