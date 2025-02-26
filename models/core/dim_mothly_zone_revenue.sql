@@ -4,7 +4,7 @@
 
 with tripdata as (
     select *
-    from {{ ref('fact_trips') }}
+    from {{ ref('dim_taxi_trips') }}
 )
 select 
     pickup_zone as revenue_zone,

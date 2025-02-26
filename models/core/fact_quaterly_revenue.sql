@@ -3,9 +3,9 @@
 }}
 
 with quat_rev_raw AS (
-    select service_type, EXTRACT(YEAR FROM pickup_datetime) as year, {{get_date_quater("pickup_datetime")}} as quater, SUM(total_amount) as revenue
-    from {{ ref("fact_trips") }}
-    where EXTRACT(YEAR FROM pickup_datetime) = 2019 or EXTRACT(YEAR FROM pickup_datetime) = 2020
+    select service_type, year, quater, SUM(total_amount) as revenue
+    from {{ ref("dim_taxi_trips") }}
+    where year = 2019 or year = 2020
     group by 1, 2, 3
 )
 select service_type, year, quater, revenue,
