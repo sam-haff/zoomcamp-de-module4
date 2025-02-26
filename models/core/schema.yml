@@ -65,7 +65,7 @@ models:
         data_type: numeric
         description: ""
 
-  - name: fact_trips
+  - name: dim_taxi_trips
     description: >
       Taxi trips corresponding to both service zones (Green and yellow).
       The table contains records where both pickup and dropoff locations are valid and known zones. 
