@@ -24,7 +24,7 @@
     - Since no default is available, code with <em>env_var</em> fails to compile(there is no way to decide which value it should have).\
     Both <em>stg</em> and <em>staging</em> behave the same way, because the condition is != "core", which both values obey.
 
-5. **Taxi Quarterly Revenue Growth**
+5. **Taxi Quarterly Revenue Growth**\
    **Answer:** green: {best: 2020/Q1, worst: 2020/Q2}, yellow: {best: 2020/Q1, worst: 2020/Q2}
 
    Explanation:
